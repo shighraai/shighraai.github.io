@@ -5,17 +5,17 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://kishorjena.github.io/Shighra-AI/index.html</loc>
+  <loc>https://shighraai.github.io/index.html</loc>
   <lastmod>2025-08-17T14:51:30+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://kishorjena.github.io/Shighra-AI/privacy.html</loc>
+  <loc>https://shighraai.github.io/privacy.html</loc>
   <lastmod>2025-08-17T14:51:30+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://kishorjena.github.io/Shighra-AI/support.html</loc>
+  <loc>https://shighraai.github.io/support.html</loc>
   <lastmod>2026-01-07T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
