@@ -1,53 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support - Shighra AI</title>
+    <!-- Use same meta tags as index.html where relevant -->
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="assets/logo-icon/icon48.png" sizes="48x48">
+    <link rel="icon" href="assets/logo-icon/icon32.png" sizes="32x32">
+    <link rel="icon" href="assets/logo-icon/icon16.png" sizes="16x16">
+    <link rel="apple-touch-icon" href="assets/logo-icon/icon180.png">
+
+    <!-- Preload and Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/main.js"></script>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            line-height: 1.7;
-            color: #ffffff;
-            max-width: 720px;
-            margin: 20px auto;
-            padding: 25px;
-            background-color: #000000;
+        /* Specific overrides for support page if needed */
+        .support-hero {
+            padding: 60px 20px 20px;
+            text-align: center;
         }
-        h1 { font-size: 2em; color: #ffffff; border-bottom: 2px solid #333333; padding-bottom: 10px; margin-bottom: 1em; }
-        h2 { font-size: 1.3em; color: #eeeeee; margin-top: 1.5em; border-bottom: 1px solid #333333; padding-bottom: 8px; }
-        p, li { margin-bottom: 1em; }
-        a { color: #58a6ff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .last-updated { color: #aaaaaa; font-style: italic; margin-top: -1em; margin-bottom: 1.5em; }
-        ul { padding-left: 20px; }
+
+        .support-updated {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin-top: -10px;
+            margin-bottom: 40px;
+        }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .faq-item {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .faq-item h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .faq-item p {
+            color: var(--text);
+            font-size: 1rem;
+        }
     </style>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <div class="logo">
+                    <img src="assets/logo/logo-no-pad-white.svg" alt="Shighra AI Logo">
+                    <span>Shighra AI</span>
+                </div>
+            </a>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="https://chromewebstore.google.com/detail/shighraai/lefcbcmbhcpplfjbmedcmmgimbgehbia"
+                        class="install-button">Install <span>&rarr;</span></a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Support for Shighra AI</h1>
-    <p class="last-updated">Last Updated: January 7, 2026</p>
+    <main>
+        <section class="support-hero">
+            <div class="hero-content">
+                <h1>Support Center</h1>
+                <p class="hero-subtitle">We're here to help you get the most out of Shighra AI</p>
+                <p class="support-updated">Last Updated: January 7, 2026</p>
+            </div>
+        </section>
 
-    <p>If you need help with the Shighra AI extension, you can reach us using the options below. We aim to respond quickly to bug reports and support requests.</p>
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Contact Options</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>&#9993; Email Support</h3>
+                    <p>Best for general inquiries, account questions, and direct assistance.</p>
+                    <a href="mailto:Shighra.AI@gmail.com" class="cta-button"
+                        style="padding: 10px 20px; font-size: 1rem;">Email Us</a>
+                </div>
+                <div class="feature-card">
+                    <h3>&#128027; Report a Bug</h3>
+                    <p>Found an issue? Let us know on GitHub so we can fix it quickly.</p>
+                    <a href="https://github.com/shighraai/shighraai.github.io/issues" target="_blank"
+                        rel="noopener noreferrer" class="cta-button"
+                        style="padding: 10px 20px; font-size: 1rem; background: var(--surface); border: 1px solid var(--primary);">Open
+                        Issue</a>
+                </div>
+            </div>
+        </section>
 
-    <h2>Contact & Support</h2>
-    <ul>
-        <li><strong>Email:</strong> <a href="mailto:Shighra.AI@gmail.com">Shighra.AI@gmail.com</a> — best for general support and account-related questions.</li>
-        <li><strong>Report a Bug / Feature Request:</strong> Open an issue on GitHub: <a href="https://github.com/shighraai/shighraai.github.io/issues" target="_blank" rel="noopener noreferrer">GitHub Repository</a>.</li>
-    </ul>
+        <section class="content-section">
+            <div class="section-header">
+                <h2>Common Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>How quickly will I get a response?</h3>
+                    <p>We typically respond within 1–3 business days. Critical bugs affecting many users are prioritized
+                        immediately.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I request a new feature?</h3>
+                    <p>Absolutely! We love community feedback. Please describe your idea on our GitHub Issues page so
+                        existing users can vote on it.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Where can I find release notes?</h3>
+                    <p>Check the <a href="https://github.com/shighraai/shighraai.github.io/releases"
+                            style="color: var(--primary);">GitHub Releases</a> page or our changelog for the latest
+                        updates.</p>
+                </div>
+            </div>
+        </section>
 
-    <h2>Common Questions</h2>
-    <ul>
-        <li><strong>How quickly will I get a response?</strong> Typical response time is 1–3 business days for support requests; critical bugs are prioritized.</li>
-        <li><strong>Can I request a new feature?</strong> Yes — please describe the use case on GitHub so we can evaluate and prioritize it.</li>
-        <li><strong>Where can I find release notes?</strong> Check the GitHub repository's Releases or changelog for updates.</li>
-    </ul>
+        <section class="content-section" style="text-align: center;">
+            <div class="section-header">
+                <h2>Privacy & Data</h2>
+            </div>
+            <p style="color: var(--text); font-size: 1.1rem; max-width: 600px; margin: 0 auto;">
+                For details on how we handle your data, please review our
+                <a href="privacy.html" style="color: var(--primary); text-decoration: underline;">Privacy Policy</a>.
+            </p>
+        </section>
+    </main>
 
-    <h2>Privacy & Data</h2>
-    <p>For privacy-related questions and how data is handled, please see the <a href="privacy.html">Privacy Policy</a>.</p>
-
-    <hr>
-    <p>Return to <a href="index.html" target="_blank" rel="noopener noreferrer">Shighra AI Home</a></p>
-
+    <footer>
+        <div class="social-links">
+            <a href="mailto:Shighra.AI@gmail.com" aria-label="Email"><img src="assets/logo-icon/icon32.png" alt="Email"
+                    style="filter: none;"></a>
+            <!-- Add other social links if available from index.html, using placeholders for now if not explicit -->
+        </div>
+        <a href="privacy.html" style="text-decoration: none; color: #888; margin-right: 15px;">Privacy Policy</a>
+        <a href="support.html" style="text-decoration: none; color: #888;">Support</a>
+        <p style="margin-top: 20px; color: #666;">&copy; 2025 Shighra AI. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
