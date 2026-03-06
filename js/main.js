@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const target = document.querySelector(targetId);
             if (target) {
                 target.scrollIntoView({
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add scroll reveal animation
     const revealElements = document.querySelectorAll('.feature-card, .hero-content, .section-header');
-    
+
     const revealOnScroll = () => {
         revealElements.forEach(element => {
             const elementTop = element.getBoundingClientRect().top;
@@ -62,7 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (waitlistForm) {
         waitlistForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const email = emailInput.value;
+            const contactInfo = emailInput.value;
+            const planNodes = document.querySelectorAll('input[name="plan"]:checked');
+            const plan = planNodes.length > 0 ? planNodes[0].value : 'Free';
+
+            // Format as "contact | plan"
+            const email = `${contactInfo} | ${plan}`;
+
             const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx82T3MhnFwyAaYUJpK4J0hY1F5LzW6BZ1nr2k4wnWqHhfZE4yqdAZc1eqvyJrJ3L3GBw/exec";
 
             submitButton.disabled = true;
